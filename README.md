@@ -1,5 +1,50 @@
-## Calculadora-em-Python
-## Primeiroamente voc tem 4 opções  soma, subtração, multiplicação e divisão
-## Escolha entre 1 á 4 sendo as operações matemática 
-## Escolha o Primeiro Numero, e depois o Segundo Numero 
-## e Veja o Resultado.
+
+# Calculadora em Python
+
+print("\n************Calculadora Python************")
+
+def add(x, y):
+    return x + y
+
+def subtract(x, y):
+    return x - y
+
+def multiply(x, y):
+    return x * y
+
+def divide(x, y):
+    return x / y
+
+print("\nSelecione o Número da Operação desejada: \n")
+print("1 - Soma")
+print("2 - Subtração")
+print("3 - Multiplicação")
+print("4 - Divisão")
+
+escolha = input("\nDigite Sua Opção (1/2/3/4): ")
+
+num1 = int(input("\nDigite o Primeiro Número: "))
+num2 = int(input("\nDigite o Segundo Número: "))
+
+if escolha == "1":
+    print("\n")
+    print(num1, "+", num2, "=", add(num1, num2))
+    print("\n")
+
+elif escolha == "2":
+    print("\n")
+    print(num1, "-", num2, "=", subtract(num1, num2))
+    print("\n")
+    
+elif escolha == "3":
+    print("\n")
+    print(num1, "*", num2, "=", multiply(num1, num2))
+    print("\n")
+    
+elif escolha == "4":
+    print("\n")
+    print(num1, "/", num2, "=", divide(num1, num2))
+    print("\n")
+    
+else: 
+    print("\nOpção Inválida!")
